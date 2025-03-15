@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <footer className="bg-white pt-20 pb-10 border-t border-slate-100">
-      <div className="container-custom">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
           <div className="md:col-span-4">
             <div className="mb-6">
-              <a href="#" className="text-slate-900 font-montserrat text-2xl tracking-wide font-light">
-                RETORNO<span className="font-semibold">.</span>
+              <a href="#" className="text-slate-900 font-serif text-2xl tracking-wide font-light">
+                YOGA<span className="font-semibold">.</span>
               </a>
             </div>
             
@@ -87,7 +87,7 @@ const Footer = () => {
                 placeholder="Seu email" 
                 className="w-full p-3 border border-slate-200 focus:outline-none focus:border-slate-800 text-sm"
               />
-              <button className="btn-primary w-full">inscrever</button>
+              <button className="w-full px-6 py-3 bg-green-700 text-white uppercase tracking-wider text-sm font-medium hover:bg-green-800 transition-all">inscrever</button>
             </form>
           </div>
         </div>

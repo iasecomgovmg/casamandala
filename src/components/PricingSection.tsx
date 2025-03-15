@@ -56,7 +56,7 @@ const PricingSection = () => {
         </svg>
       </div>
       
-      <div className="container-custom relative z-10">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <motion.div 
           className="mb-16 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -77,7 +77,7 @@ const PricingSection = () => {
           {pricingOptions.map((option) => (
             <motion.div 
               key={option.id}
-              className="bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white p-8 shadow-sm"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const LocationSection = () => {
   return (
-    <section id="local" className="section-alt">
-      <div className="container-custom">
+    <section id="local" className="py-24 bg-slate-50">
+      <div className="container mx-auto px-6 max-w-7xl">
         <motion.div 
           className="mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ const LocationSection = () => {
               </h3>
               
               <ul className="space-y-6">
-                <li className="counter-item">
+                <li className="pt-6 border-t border-slate-200">
                   <p className="text-slate-600">
                     <span className="block text-slate-800 mb-1">Endereço</span>
                     Garopaba, SC<br />
@@ -72,14 +72,14 @@ const LocationSection = () => {
                   </p>
                 </li>
                 
-                <li className="counter-item">
+                <li className="pt-6 border-t border-slate-200">
                   <p className="text-slate-600">
                     <span className="block text-slate-800 mb-1">Email</span>
                     contato@montanhaencantada.com.br
                   </p>
                 </li>
                 
-                <li className="counter-item">
+                <li className="pt-6 border-t border-slate-200">
                   <p className="text-slate-600">
                     <span className="block text-slate-800 mb-1">Telefone</span>
                     (00) 00000-0000
@@ -88,7 +88,12 @@ const LocationSection = () => {
               </ul>
               
               <div className="mt-12">
-                <a href="#reservas" className="btn-primary">agende uma visita</a>
+                <a 
+                  href="#reservas" 
+                  className="px-8 py-3 bg-green-700 text-white uppercase tracking-wider text-sm font-medium hover:bg-green-800 transition-all inline-block"
+                >
+                  agende uma visita
+                </a>
               </div>
             </motion.div>
           </div>

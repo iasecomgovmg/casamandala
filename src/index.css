@@ -11,148 +11,36 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 220 14% 20%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
   }
 
   body {
     @apply bg-white text-slate-800 font-sans;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-montserrat text-slate-900 font-light;
-  }
-}
-
-@layer components {
-  .btn-primary {
-    @apply py-3 px-6 bg-slate-900 text-white rounded-none border border-slate-900 font-medium tracking-widest uppercase text-xs
-    hover:bg-white hover:text-slate-900 transition-all duration-300 active:scale-95;
-  }
-
-  .btn-secondary {
-    @apply py-3 px-6 border border-slate-800 text-slate-800 rounded-none font-medium tracking-widest uppercase text-xs
-    hover:bg-slate-800 hover:text-white transition-all duration-300 active:scale-95;
+    @apply text-slate-900 font-light;
+    font-family: 'Montserrat', sans-serif;
   }
   
-  .btn-minimal {
-    @apply py-3 px-6 text-slate-800 rounded-none font-medium tracking-widest uppercase text-xs relative
-    after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-slate-800 hover:after:w-full after:transition-all after:duration-300;
-  }
-
-  .section {
-    @apply py-24 px-4 md:px-8;
-  }
-
-  .section-alt {
-    @apply py-24 px-4 md:px-8 bg-slate-50;
-  }
-
-  .container-custom {
-    @apply max-w-7xl mx-auto;
-  }
-
-  .card-minimal {
-    @apply bg-white p-8 border border-slate-100 transition-all duration-300 hover:border-slate-200;
+  .font-serif {
+    font-family: 'Cormorant Garamond', serif;
   }
 }
 
-/* Smooth scroll */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Montserrat font */
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
+/* Container styles */
+.container {
+  @apply px-4 mx-auto;
 }
 
-/* Custom hover effects */
-.hover-line {
-  position: relative;
-}
-
-.hover-line::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-
-.hover-line:hover::after {
-  width: 100%;
-}
-
-/* Hero Text Animation */
-.hero-text {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-text-large {
-  font-size: 12rem;
-  line-height: 0.9;
-  font-weight: 200;
-  letter-spacing: -0.05em;
-}
-
-@media (max-width: 1024px) {
-  .hero-text-large {
-    font-size: 8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-text-large {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-text-large {
-    font-size: 3.5rem;
-  }
-}
-
-/* Fade-in animations */
+/* Animation utilities */
 .fade-in {
-  opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
 
@@ -165,38 +53,4 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Number counters */
-.counter-item {
-  counter-increment: counter;
-  position: relative;
-}
-
-.counter-item::before {
-  content: "0" counter(counter);
-  position: absolute;
-  top: -2rem;
-  left: 0;
-  font-size: 0.75rem;
-  color: #9ca3af;
-  letter-spacing: 0.1em;
-}
-
-/* Horizontal slider */
-.horizontal-scroll {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.horizontal-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.scroll-item {
-  scroll-snap-align: start;
-  flex-shrink: 0;
 }

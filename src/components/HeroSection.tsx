@@ -21,13 +21,13 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="container-custom relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-20">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: isLoaded ? 1 : 0 }}
             transition={{ duration: 1 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left lg:col-span-6"
           >
             <div className="mb-6 flex items-center justify-center lg:justify-start">
               <div className="w-12 h-0.5 bg-green-700 mr-4"></div>
@@ -64,13 +64,13 @@ const HeroSection = () => {
           </motion.div>
           
           <motion.div
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex justify-center lg:justify-end lg:col-span-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" 
+              src="https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" 
               alt="Yoga pose" 
               className="w-[80%] lg:w-[90%] h-auto object-cover object-center rounded-lg shadow-xl"
             />

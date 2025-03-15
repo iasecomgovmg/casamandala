@@ -7,7 +7,7 @@ const QuoteSection = () => {
       {/* Background pattern */}
       <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-sky-50 to-white opacity-50"></div>
       
-      <div className="container-custom relative z-10">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}

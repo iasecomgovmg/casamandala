@@ -7,9 +7,9 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import FacilitatorsSection from '@/components/FacilitatorsSection';
+import QuoteSection from '@/components/QuoteSection';
 import LocationSection from '@/components/LocationSection';
 import PricingSection from '@/components/PricingSection';
-import QuoteSection from '@/components/QuoteSection';
 import SignupForm from '@/components/SignupForm';
 import Footer from '@/components/Footer';
 
@@ -18,7 +18,6 @@ const Index = () => {
 
   useEffect(() => {
     const loadPage = async () => {
-      // Simulate loading
       await controls.start({
         opacity: 1,
         y: 0,
@@ -33,7 +32,7 @@ const Index = () => {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
-      className="overflow-hidden"
+      className="overflow-hidden bg-white"
     >
       <Navbar />
       <HeroSection />

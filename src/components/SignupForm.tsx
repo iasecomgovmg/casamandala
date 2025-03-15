@@ -25,13 +25,13 @@ const SignupForm = () => {
 
   return (
     <section className="py-20 bg-white relative">
-      <div className="container-custom">
+      <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto bg-white shadow-xl p-8 md:p-12 rounded-sm"
+          className="max-w-3xl mx-auto bg-white shadow-xl p-8 md:p-12"
         >
           <h2 className="text-4xl md:text-5xl font-serif font-light text-center mb-8">
             Reserve sua prática gratuita

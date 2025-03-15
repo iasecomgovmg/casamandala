@@ -5,19 +5,19 @@ const FacilitatorsSection = () => {
   const facilitators = [
     {
       name: "Rafaela Valente",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
       bio: "Psicóloga especialista em Transpessoal com base corporal (Instituto Serra da Portaria); Especialista em desprogramação de crenças; Reprogramadora mental e vibracional; Terapeuta do Inconsciente; Mestra em Reiki; Terapeuta holística (radiestesia, ayurveda, cromoterapia, reflexologia); Consteladora Sistêmica Familiar (IDESV); Neuroterapeuta Hertz; Terapeuta de Holococriação da Realidade"
     },
     {
       name: "Wilma Ferreira",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80",
       bio: "Psicóloga especialista em Transpessoal de base corporal-Instituto Serra da Portaria; Psicoterapia em DMP( regressão de memória) (Roger J. Woolger); Biomagnetista( escola superior de Biomagnetismo médico Isaac Goiz Durán); Formação em psicologia do trânsito; TRE exercícios para liberação do trauma (David Berceli); Terapeuta em Reiki; Terapeuta em Thetaheling; Terapeuta em Massoterapia"
     }
   ];
 
   return (
-    <section id="facilitadoras" className="section bg-white">
-      <div className="container-custom">
+    <section id="facilitadoras" className="py-24 bg-white">
+      <div className="container mx-auto px-6 max-w-7xl">
         <motion.div 
           className="mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ const FacilitatorsSection = () => {
               </div>
               
               <div className="md:col-span-7">
-                <div className="counter-item pt-8">
+                <div className="pt-8">
                   <h3 className="text-2xl font-light mb-4">
                     {facilitator.name}
                   </h3>

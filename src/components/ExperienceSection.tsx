@@ -6,23 +6,23 @@ const ExperienceSection = () => {
     {
       title: "Liberação de traumas",
       description: "Exercícios de bioenergética e TRE para liberação de traumas e bloqueios",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1820&q=80"
+      image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1820&q=80"
     },
     {
       title: "Práticas respiratórias",
       description: "Meditações guiadas, práticas de respiração e dinâmicas emocionais",
-      image: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+      image: "https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
     },
     {
       title: "Conexão com a natureza",
       description: "Alimentação consciente e momentos de conexão profunda com a natureza",
-      image: "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     }
   ];
 
   return (
-    <section id="experiencia" className="section-alt">
-      <div className="container-custom">
+    <section id="experiencia" className="py-24 bg-slate-50">
+      <div className="container mx-auto px-6 max-w-7xl">
         <motion.div 
           className="mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -65,7 +65,7 @@ const ExperienceSection = () => {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
               </div>
               
-              <div className="counter-item">
+              <div>
                 <h3 className="text-xl font-medium mb-2">{item.title}</h3>
                 <p className="text-slate-600">{item.description}</p>
               </div>
@@ -84,7 +84,7 @@ const ExperienceSection = () => {
             É hora de voltar para o seu centro e viver de forma mais leve, plena e alinhada.
           </p>
           
-          <a href="#reservas" className="btn-primary mt-8 inline-block">
+          <a href="#reservas" className="mt-8 inline-block px-8 py-3 bg-green-700 text-white rounded-none uppercase tracking-wider text-sm font-medium hover:bg-green-800 transition-all">
             reserve sua vaga
           </a>
         </motion.div>

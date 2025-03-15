@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="section bg-white">
-      <div className="container-custom">
+    <section id="sobre" className="py-24 bg-white">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-4">
             <motion.div
@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <motion.div 
-                className="counter-item card-minimal"
+                className="bg-white p-8 shadow-sm border border-slate-100"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -47,7 +47,7 @@ const AboutSection = () => {
               </motion.div>
               
               <motion.div 
-                className="counter-item card-minimal"
+                className="bg-white p-8 shadow-sm border border-slate-100"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -64,7 +64,7 @@ const AboutSection = () => {
               </motion.div>
               
               <motion.div 
-                className="counter-item card-minimal"
+                className="bg-white p-8 shadow-sm border border-slate-100"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

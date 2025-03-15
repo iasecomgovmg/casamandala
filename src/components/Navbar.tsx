@@ -28,17 +28,45 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="text-slate-900 font-montserrat text-2xl tracking-wide font-light">
-            RETORNO<span className="font-semibold">.</span>
+          <a href="#" className="flex items-center">
+            <div className="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-white"
+              >
+                <path 
+                  d="M12 3L19.2 17.4H4.8L12 3Z" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  fill="none"
+                />
+                <path 
+                  d="M12 12.6C13.3807 12.6 14.5 11.4807 14.5 10.1C14.5 8.71929 13.3807 7.6 12 7.6C10.6193 7.6 9.5 8.71929 9.5 10.1C9.5 11.4807 10.6193 12.6 12 12.6Z" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <span className="ml-2 text-xl font-serif uppercase tracking-wider text-slate-900">RETORNO</span>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#sobre" className="text-slate-700 hover-line">sobre</a>
-            <a href="#experiencia" className="text-slate-700 hover-line">experiência</a>
-            <a href="#facilitadoras" className="text-slate-700 hover-line">facilitadoras</a>
-            <a href="#local" className="text-slate-700 hover-line">local</a>
-            <a href="#reservas" className="btn-primary">reservar</a>
+            <a href="#sobre" className="text-slate-700 hover:text-green-700 transition-colors">sobre</a>
+            <a href="#experiencia" className="text-slate-700 hover:text-green-700 transition-colors">experiência</a>
+            <a href="#facilitadoras" className="text-slate-700 hover:text-green-700 transition-colors">facilitadoras</a>
+            <a href="#local" className="text-slate-700 hover:text-green-700 transition-colors">local</a>
+            <a 
+              href="#reservas" 
+              className="px-5 py-2 bg-green-700 text-white uppercase tracking-wider text-xs font-medium hover:bg-green-800 transition-all"
+            >
+              reservar
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -96,7 +124,7 @@ const Navbar = () => {
               </a>
               <a 
                 href="#reservas" 
-                className="btn-primary w-full text-center mt-4"
+                className="px-6 py-3 bg-green-700 text-white uppercase tracking-wider text-sm font-medium text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 reservar

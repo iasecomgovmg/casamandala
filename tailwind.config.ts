@@ -75,6 +75,30 @@ export default {
 					800: '#1e293b',
 					900: '#0f172a',
 				},
+				green: {
+					50: '#f0fdf4',
+					100: '#dcfce7',
+					200: '#bbf7d0',
+					300: '#86efac',
+					400: '#4ade80',
+					500: '#22c55e',
+					600: '#16a34a',
+					700: '#15803d', // Main green color for our site
+					800: '#166534',
+					900: '#14532d',
+				},
+				sky: {
+					50: '#f0f9ff',
+					100: '#e0f2fe',
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e',
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -118,6 +142,11 @@ export default {
 				'pulse-gentle': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' }
+				},
+				'float-cloud': {
+					'0%': { transform: 'translateY(0) translateX(0)' },
+					'50%': { transform: 'translateY(-10px) translateX(15px)' },
+					'100%': { transform: 'translateY(0) translateX(0)' }
 				}
 			},
 			animation: {
@@ -128,7 +157,8 @@ export default {
 				'fade-in-right': 'fade-in-right 0.7s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite'
+				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite',
+				'float-cloud': 'float-cloud 20s ease-in-out infinite'
 			}
 		}
 	},

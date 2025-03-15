@@ -10,6 +10,7 @@ import FacilitatorsSection from '@/components/FacilitatorsSection';
 import LocationSection from '@/components/LocationSection';
 import PricingSection from '@/components/PricingSection';
 import QuoteSection from '@/components/QuoteSection';
+import SignupForm from '@/components/SignupForm';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -42,6 +43,7 @@ const Index = () => {
       <QuoteSection />
       <LocationSection />
       <PricingSection />
+      <SignupForm />
       <Footer />
     </motion.div>
   );

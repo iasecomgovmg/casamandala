@@ -63,23 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				sage: {
-					DEFAULT: '#7d9178',
-					light: '#b4c4b0',
-					dark: '#5e6e5a',
-					lightest: '#f9faf8',
-					darkest: '#3a4338'
+				slate: {
+					50: '#f8fafc',
+					100: '#f1f5f9',
+					200: '#e2e8f0',
+					300: '#cbd5e1',
+					400: '#94a3b8',
+					500: '#64748b',
+					600: '#475569',
+					700: '#334155',
+					800: '#1e293b',
+					900: '#0f172a',
 				},
-				sand: {
-					DEFAULT: '#e8e1d9',
-					light: '#f5f2ee',
-					dark: '#d8cec2'
-				},
-				terracotta: {
-					DEFAULT: '#c97c5d',
-					light: '#e3a791',
-					dark: '#a35e45'
-				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -88,7 +83,8 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				serif: ['Cormorant Garamond', 'serif']
+				serif: ['Cormorant Garamond', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif']
 			},
 			keyframes: {
 				'accordion-down': {

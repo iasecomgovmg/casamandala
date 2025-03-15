@@ -1,138 +1,92 @@
 
 import { motion } from 'framer-motion';
-import { Activity, CheckCircle } from 'lucide-react';
 
 const ExperienceSection = () => {
   const experiences = [
-    "Exercícios de bioenergética e TRE para liberação de traumas e bloqueios",
-    "Dinâmicas sistêmicas para tomar o seu lugar na vida, conectando com o seu propósito",
-    "Meditações guiadas, práticas de respiração e dinâmicas emocionais",
-    "Workshops sobre autocuidado, relações saudáveis e alinhamento com sua essência",
-    "Alimentação consciente e momentos de conexão profunda com a natureza",
-    "Ritual de encerramento para integrar os aprendizados à sua vida diária"
-  ];
-
-  const benefits = [
-    "Lidar com suas emoções, desenvolvendo inteligência emocional e aprendendo a usar o poder da mente a seu favor",
-    "Reconstruir sua conexão consigo mesmo e com os outros; através de técnicas para flexibilizar couraças musculares e respiração, construindo assim relações saudáveis",
-    "Fortalecer suas emoções e encontrar equilíbrio interno através da meditação",
-    "Transformar sua relação com as pessoas, com o trabalho, com o dinheiro e com a alimentação",
-    "Autoconhecimento através dos trabalhos com mandalas e visualizações"
+    {
+      title: "Liberação de traumas",
+      description: "Exercícios de bioenergética e TRE para liberação de traumas e bloqueios",
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1820&q=80"
+    },
+    {
+      title: "Práticas respiratórias",
+      description: "Meditações guiadas, práticas de respiração e dinâmicas emocionais",
+      image: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+    },
+    {
+      title: "Conexão com a natureza",
+      description: "Alimentação consciente e momentos de conexão profunda com a natureza",
+      image: "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    }
   ];
 
   return (
-    <section id="experiencia" className="section bg-sage-lightest relative">
-      <div className="absolute inset-0 bg-pattern opacity-50 z-0"></div>
-      
-      <div className="container-custom relative z-10">
+    <section id="experiencia" className="section-alt">
+      <div className="container-custom">
         <motion.div 
-          className="max-w-3xl mx-auto text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
+          className="mb-16"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex justify-center mb-4">
-            <div className="bg-white p-3 rounded-full shadow-sm">
-              <Activity className="h-6 w-6 text-sage" />
-            </div>
+          <div className="mb-4 flex items-center">
+            <div className="w-12 h-0.5 bg-slate-400 mr-4"></div>
+            <span className="text-slate-500 uppercase tracking-widest text-xs">nossa programação</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-serif text-sage-darkest mb-6">
-            O que você vai vivenciar?
-          </h2>
-          
-          <p className="text-lg text-sage-darkest/80">
-            Um programa completo para sua transformação interior e conexão com sua essência.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
+            <h2 className="text-4xl lg:text-5xl font-light mb-6 md:mb-0">
+              O que você vai<br />vivenciar?
+            </h2>
+            
+            <p className="text-slate-600 max-w-md">
+              Um programa completo para sua transformação interior e conexão com sua essência.
+            </p>
+          </div>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-16">
-          <div className="lg:col-span-2">
-            <motion.div 
-              className="relative h-full"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="rounded-2xl overflow-hidden h-full shadow-lg img-hover-zoom">
-                <img 
-                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1399&q=80" 
-                  alt="Experiência de yoga e meditação"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              <div className="absolute -bottom-5 -right-5 h-24 w-24 bg-terracotta/10 rounded-full"></div>
-            </motion.div>
-          </div>
-          
-          <div className="lg:col-span-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {experiences.map((item, index) => (
             <motion.div
-              className="stagger-fade-in"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-            >
-              <ul className="space-y-4">
-                {experiences.map((experience, index) => (
-                  <li key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
-                    <CheckCircle className="h-5 w-5 text-sage flex-shrink-0 mt-0.5" />
-                    <span className="text-sage-darkest/80">{experience}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-        
-        <motion.div 
-          className="max-w-3xl mx-auto text-center mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3 className="text-2xl md:text-3xl font-serif text-sage-darkest mb-6">
-            Um espaço seguro, em meio à natureza
-          </h3>
-          
-          <p className="text-lg text-sage-darkest/80 mb-2">
-            Onde você aprenderá ferramentas práticas para:
-          </p>
-        </motion.div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {benefits.map((benefit, index) => (
-            <motion.div 
               key={index}
-              className="bg-white p-6 rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 20 }}
+              className="group relative"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <div className="flex items-start gap-3">
-                <div className="bg-sage/10 p-2 rounded-full flex-shrink-0 mt-1">
-                  <CheckCircle className="h-4 w-4 text-sage" />
-                </div>
-                <p className="text-sage-darkest/80">{benefit}</p>
+              <div className="relative aspect-[3/4] overflow-hidden mb-6">
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+              </div>
+              
+              <div className="counter-item">
+                <h3 className="text-xl font-medium mb-2">{item.title}</h3>
+                <p className="text-slate-600">{item.description}</p>
               </div>
             </motion.div>
           ))}
         </div>
         
         <motion.div 
-          className="mt-16 text-center"
+          className="mt-20 max-w-3xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xl md:text-2xl font-serif text-sage italic">
+          <p className="text-xl font-light text-slate-700">
             É hora de voltar para o seu centro e viver de forma mais leve, plena e alinhada.
           </p>
+          
+          <a href="#reservas" className="btn-primary mt-8 inline-block">
+            reserve sua vaga
+          </a>
         </motion.div>
       </div>
     </section>

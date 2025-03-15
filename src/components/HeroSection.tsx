@@ -1,95 +1,65 @@
 
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-sage-lightest pt-24 pb-20 overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-sage-light/20 blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-sand/30 blur-3xl"></div>
-      </div>
-      
+    <section className="min-h-screen bg-slate-50 pt-20 relative overflow-hidden flex items-center">
       <div className="container-custom relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="order-2 lg:order-1"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-tight mb-6">
-              Retorno ao <span className="text-sage font-normal">Centro</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-sage-darkest/80 mb-6 font-light">
-              Reconecte-se com sua essência e fortaleça suas emoções
-            </p>
-            
-            <p className="text-sage-darkest/70 mb-8 max-w-lg mx-auto lg:mx-0">
-              Um retiro transformador no Centro de Yoga Montanha Encantada, 
-              onde você poderá desacelerar, olhar para dentro e reencontrar sua essência.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#reservas" className="btn-primary">
-                Reservar minha vaga
-              </a>
-              <a href="#sobre" className="btn-secondary group">
-                Saiba mais
-                <ArrowRight className="inline-block ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
+            <div className="mb-6 flex items-center">
+              <div className="w-12 h-0.5 bg-slate-400 mr-4"></div>
+              <span className="text-slate-500 uppercase tracking-widest text-xs">20-23 fevereiro 2025</span>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-12">
-              <div className="flex items-center">
-                <Calendar className="text-sage mr-2 h-5 w-5" />
-                <span className="text-sage-darkest/80">20 a 23 de fevereiro de 2025</span>
-              </div>
+            <h1 className="mb-8">
+              <span className="block text-xl mb-3 font-light">encontre seu</span>
+              <span className="hero-text-large text-[#333333]">YOGA</span>
+              <span className="block text-xl mt-2 font-light tracking-wide">equilíbrio</span>
+            </h1>
+            
+            <div className="max-w-md">
+              <p className="text-slate-600 mb-10">
+                Um retiro transformador no Centro de Yoga Montanha Encantada, 
+                onde você poderá desacelerar, olhar para dentro e reencontrar sua essência.
+              </p>
               
-              <div className="flex items-center">
-                <MapPin className="text-sage mr-2 h-5 w-5" />
-                <span className="text-sage-darkest/80">Garopaba, SC</span>
+              <div className="flex flex-wrap gap-4">
+                <a href="#reservas" className="btn-primary">
+                  reservar agora
+                </a>
+                <a href="#sobre" className="btn-secondary">
+                  saiba mais
+                </a>
               </div>
             </div>
           </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="order-1 lg:order-2 relative"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
           >
-            <div className="relative w-full max-w-xl mx-auto">
-              {/* Main image */}
-              <div className="rounded-2xl overflow-hidden shadow-xl img-hover-zoom">
-                <img 
-                  src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" 
-                  alt="Retiro de yoga" 
-                  className="w-full h-auto"
-                />
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -bottom-5 -left-5 h-24 w-24 bg-terracotta/10 rounded-full"></div>
-              <div className="absolute -top-5 -right-5 h-32 w-32 bg-sage/10 rounded-full"></div>
-              
-              {/* Info cards */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 bg-white p-4 rounded-xl shadow-lg max-w-[200px]"
-              >
-                <p className="text-sm text-sage-darkest/70">
-                  "Um final de semana transformador dentro da abordagem da psicologia transpessoal"
-                </p>
-              </motion.div>
+            <img 
+              src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" 
+              alt="Yoga pose" 
+              className="w-full h-[80vh] object-cover object-center"
+            />
+            <div className="absolute bottom-4 right-4 bg-white p-4 border border-slate-100 w-48">
+              <span className="text-xs text-slate-500 uppercase tracking-widest">Garopaba, SC</span>
             </div>
           </motion.div>
         </div>
       </div>
+      
+      {/* Decorative elements */}
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-white"></div>
     </section>
   );
 };

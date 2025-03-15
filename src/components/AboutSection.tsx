@@ -1,93 +1,130 @@
 
 import { motion } from 'framer-motion';
-import { Leaf } from 'lucide-react';
+import { Heart, Leaf, RefreshCw } from 'lucide-react';
 
 const AboutSection = () => {
+  const fadeInUpVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
   return (
-    <section id="sobre" className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="sobre" className="section bg-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-pattern-light opacity-30 z-0"></div>
+      
+      <div className="container-custom relative z-10">
         <motion.div 
           className="max-w-3xl mx-auto text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          variants={fadeInUpVariants}
         >
-          <h2 className="text-3xl md:text-4xl font-cursive text-yoga-teal mb-6">
+          <div className="flex justify-center mb-4">
+            <div className="bg-sage/10 p-3 rounded-full">
+              <Heart className="h-6 w-6 text-sage" />
+            </div>
+          </div>
+          
+          <h2 className="text-3xl md:text-4xl font-serif text-sage-darkest mb-6">
             Um convite para desacelerar e reencontrar sua essência
           </h2>
-          <p className="text-lg text-yoga-gray/90">
+          
+          <p className="text-lg text-sage-darkest/80">
             Este retiro de 3 dias é uma imersão transformadora dentro da abordagem da 
             psicologia transpessoal centrada no corpo. Um espaço seguro, em meio à natureza, 
             onde você aprenderá ferramentas práticas para fortalecer suas emoções e viver 
             relações mais saudáveis e alinhadas.
           </p>
         </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <motion.div 
-            className="bg-yoga-light-cream p-8 rounded-2xl shadow-sm"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-6">
-              <h3 className="text-2xl font-cursive text-yoga-teal mb-4">
-                Você tem vivido ou sobrevivido?
-              </h3>
-              <p className="text-yoga-gray">
-                Você sente que a correria do dia a dia desconecta você do que realmente importa?
-                Está sobrecarregado(a) pelas emoções, enfrentando dificuldades nos seus relacionamentos 
-                pessoais, amorosos, familiares ou profissionais?
-              </p>
+            <div className="flex justify-center mb-6">
+              <div className="bg-sage/10 p-3 rounded-full">
+                <RefreshCw className="h-6 w-6 text-sage" />
+              </div>
             </div>
             
-            <div>
-              <p className="text-yoga-gray mb-4">
-                A aceleração dos tempos atuais tem gerado inúmeros prejuízos, te desconectando 
-                cada vez mais do seu verdadeiro propósito, onde o esforço e a insatisfação vão 
-                tomando o espaço da leveza e alegria de viver.
-              </p>
-              <p className="text-yoga-gray">
-                Toda perturbação emocional, como angústia, depressão, ansiedade, sentimentos de vazio, 
-                confusão mental, se manifesta no corpo, assim como bloqueios corporais expressam 
-                paralisações em nossa capacidade de sentir e expressar.
-              </p>
-            </div>
+            <h3 className="text-xl font-serif text-sage-darkest mb-4 text-center">
+              Você tem vivido ou sobrevivido?
+            </h3>
+            
+            <p className="text-sage-darkest/80 text-center">
+              Você sente que a correria do dia a dia desconecta você do que realmente importa?
+              Está sobrecarregado(a) pelas emoções, enfrentando dificuldades nos seus relacionamentos?
+            </p>
           </motion.div>
-
+          
           <motion.div 
-            className="relative"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <blockquote className="bg-yoga-light-cream p-8 rounded-2xl shadow-sm mb-10">
-              <p className="text-yoga-gray italic mb-4">
-                "Se nos entregamos ao corpo e nos permitimos ouvi-lo, focando a consciência nos 
-                sintomas emergentes, ele se desvela e nos conta a sua história"
-              </p>
-              <footer className="text-right text-yoga-teal font-cursive text-xl">
-                — Nilton Ferreira
-              </footer>
-            </blockquote>
-
-            <div className="bg-yoga-light-cream p-8 rounded-2xl shadow-sm">
-              <p className="text-yoga-gray mb-6">
-                Permita-se a fazer essa viagem para dentro de si, e encontre a verdadeira 
-                realidade que está por trás dos sintomas, nesse lugar encantado, numa imersão 
-                transformadora dentro da abordagem da psicologia transpessoal centrada no corpo;
-                libertando-se das couraças que te mantém num padrão de autossabotagem e adoecimento.
-              </p>
-              <p className="text-yoga-teal font-medium">
-                Este retiro de 3 dias é um convite para desacelerar, olhar para dentro e 
-                reencontrar sua essência.
-              </p>
+            <div className="flex justify-center mb-6">
+              <div className="bg-sage/10 p-3 rounded-full">
+                <Leaf className="h-6 w-6 text-sage" />
+              </div>
             </div>
+            
+            <h3 className="text-xl font-serif text-sage-darkest mb-4 text-center">
+              Reconexão com o corpo
+            </h3>
+            
+            <p className="text-sage-darkest/80 text-center">
+              Toda perturbação emocional se manifesta no corpo, assim como bloqueios corporais expressam 
+              paralisações em nossa capacidade de sentir e expressar.
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            className="card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="flex justify-center mb-6">
+              <div className="bg-sage/10 p-3 rounded-full">
+                <Heart className="h-6 w-6 text-sage" />
+              </div>
+            </div>
+            
+            <h3 className="text-xl font-serif text-sage-darkest mb-4 text-center">
+              Transformação interior
+            </h3>
+            
+            <p className="text-sage-darkest/80 text-center">
+              Permita-se a fazer essa viagem para dentro de si, e encontre a verdadeira 
+              realidade que está por trás dos sintomas, libertando-se das couraças que te mantém num padrão de autossabotagem.
+            </p>
           </motion.div>
         </div>
+        
+        <motion.div 
+          className="bg-sand/30 p-8 md:p-10 rounded-2xl text-center max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="text-xl md:text-2xl font-serif text-sage-darkest italic mb-4">
+            "Se nos entregamos ao corpo e nos permitimos ouvi-lo, focando a consciência nos 
+            sintomas emergentes, ele se desvela e nos conta a sua história"
+          </p>
+          
+          <p className="text-sage-dark font-medium">
+            — Nilton Ferreira
+          </p>
+        </motion.div>
       </div>
     </section>
   );

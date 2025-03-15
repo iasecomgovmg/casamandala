@@ -63,22 +63,32 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				yoga: {
-					'teal': '#3C8B80',
-					'light-teal': '#5EACA1',
-					'dark-teal': '#2A6D62', 
-					'cream': '#FEF9F0',
-					'light-cream': '#FFFCF5',
-					'dark-cream': '#F0EAE1',
-					'coral': '#E56B4E',
-					'light-coral': '#FF8E74',
-					'gray': '#555555'
+				sage: {
+					DEFAULT: '#7d9178',
+					light: '#b4c4b0',
+					dark: '#5e6e5a',
+					lightest: '#f9faf8',
+					darkest: '#3a4338'
+				},
+				sand: {
+					DEFAULT: '#e8e1d9',
+					light: '#f5f2ee',
+					dark: '#d8cec2'
+				},
+				terracotta: {
+					DEFAULT: '#c97c5d',
+					light: '#e3a791',
+					dark: '#a35e45'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Cormorant Garamond', 'serif']
 			},
 			keyframes: {
 				'accordion-down': {
@@ -123,10 +133,6 @@ export default {
 				'scale-in': 'scale-in 0.5s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite'
-			},
-			fontFamily: {
-				'cursive': ['Playfair Display', 'serif'],
-				'sans': ['Montserrat', 'sans-serif']
 			}
 		}
 	},

@@ -32,6 +32,7 @@ const Index = () => {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
+      className="overflow-hidden"
     >
       <Navbar />
       <HeroSection />

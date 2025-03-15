@@ -3,67 +3,72 @@ import { Leaf, Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-yoga-teal text-white pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
+    <footer className="bg-sage-darkest text-white pt-16 pb-8">
+      <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
-            <h3 className="font-cursive text-2xl mb-5">Retorno ao Centro</h3>
-            <p className="text-white/80 mb-5">
+            <div className="flex items-center gap-2 mb-4">
+              <Leaf className="h-5 w-5 text-sage-light" />
+              <h3 className="font-serif text-2xl text-white">Retorno ao Centro</h3>
+            </div>
+            
+            <p className="text-white/70 mb-6">
               Uma jornada transformadora para reconexão com sua essência e fortalecimento emocional.
             </p>
+            
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
-                <Instagram size={20} />
+              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
+                <Instagram size={18} />
               </a>
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
-                <Facebook size={20} />
+              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
+                <Facebook size={18} />
               </a>
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
-                <Mail size={20} />
+              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
+                <Mail size={18} />
               </a>
             </div>
           </div>
           
           <div>
-            <h3 className="font-cursive text-xl mb-5">Navegação</h3>
+            <h3 className="text-lg font-medium text-white mb-6">Navegação</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#sobre" className="text-white/80 hover:text-white transition-colors">Sobre o Retiro</a>
+                <a href="#sobre" className="text-white/70 hover:text-white transition-colors inline-block">Sobre o Retiro</a>
               </li>
               <li>
-                <a href="#experiencia" className="text-white/80 hover:text-white transition-colors">O que você vai vivenciar</a>
+                <a href="#experiencia" className="text-white/70 hover:text-white transition-colors inline-block">O que você vai vivenciar</a>
               </li>
               <li>
-                <a href="#facilitadoras" className="text-white/80 hover:text-white transition-colors">Facilitadoras</a>
+                <a href="#facilitadoras" className="text-white/70 hover:text-white transition-colors inline-block">Facilitadoras</a>
               </li>
               <li>
-                <a href="#local" className="text-white/80 hover:text-white transition-colors">Local</a>
+                <a href="#local" className="text-white/70 hover:text-white transition-colors inline-block">Local</a>
               </li>
               <li>
-                <a href="#reservas" className="text-white/80 hover:text-white transition-colors">Reservas</a>
+                <a href="#reservas" className="text-white/70 hover:text-white transition-colors inline-block">Reservas</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-cursive text-xl mb-5">Contato</h3>
+            <h3 className="text-lg font-medium text-white mb-6">Contato</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <MapPin className="mr-3 text-white/80 flex-shrink-0 mt-1" size={18} />
-                <span className="text-white/80">
+              <li className="flex items-start gap-3">
+                <MapPin className="text-sage-light flex-shrink-0 mt-1" size={18} />
+                <span className="text-white/70">
                   Centro de Yoga Montanha Encantada<br />
                   Garopaba, SC
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone className="mr-3 text-white/80" size={18} />
-                <a href="tel:+5500000000000" className="text-white/80 hover:text-white transition-colors">
+              <li className="flex items-center gap-3">
+                <Phone className="text-sage-light" size={18} />
+                <a href="tel:+5500000000000" className="text-white/70 hover:text-white transition-colors">
                   (00) 00000-0000
                 </a>
               </li>
-              <li className="flex items-center">
-                <Mail className="mr-3 text-white/80" size={18} />
-                <a href="mailto:contato@montanhaencantada.com.br" className="text-white/80 hover:text-white transition-colors">
+              <li className="flex items-center gap-3">
+                <Mail className="text-sage-light" size={18} />
+                <a href="mailto:contato@montanhaencantada.com.br" className="text-white/70 hover:text-white transition-colors">
                   contato@montanhaencantada.com.br
                 </a>
               </li>
@@ -71,8 +76,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-8 text-center">
-          <p className="text-white/60 text-sm">
+        <div className="border-t border-sage-dark/30 pt-8 text-center">
+          <p className="text-white/50 text-sm">
             &copy; {new Date().getFullYear()} Centro de Yoga Montanha Encantada. Todos os direitos reservados.
           </p>
         </div>

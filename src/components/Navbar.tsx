@@ -1,7 +1,8 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Leaf } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,29 +26,30 @@ const Navbar = () => {
       className={cn(
         'fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/90 backdrop-blur-sm shadow-sm py-3'
+          ? 'bg-white shadow-sm py-3'
           : 'bg-transparent py-5'
       )}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center">
-            <span className="font-cursive text-yoga-teal text-2xl md:text-3xl">Retorno ao Centro</span>
+          <a href="#" className="flex items-center gap-2">
+            <Leaf className="h-6 w-6 text-sage" />
+            <span className="font-serif text-sage-dark text-2xl">Retorno ao Centro</span>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#sobre" className="text-yoga-gray hover:text-yoga-teal transition-colors">Sobre</a>
-            <a href="#experiencia" className="text-yoga-gray hover:text-yoga-teal transition-colors">Experiência</a>
-            <a href="#facilitadoras" className="text-yoga-gray hover:text-yoga-teal transition-colors">Facilitadoras</a>
-            <a href="#local" className="text-yoga-gray hover:text-yoga-teal transition-colors">Local</a>
-            <a href="#reservas" className="yoga-button">Reservar Agora</a>
+            <a href="#sobre" className="text-sage-darkest hover:text-sage transition-colors">Sobre</a>
+            <a href="#experiencia" className="text-sage-darkest hover:text-sage transition-colors">Experiência</a>
+            <a href="#facilitadoras" className="text-sage-darkest hover:text-sage transition-colors">Facilitadoras</a>
+            <a href="#local" className="text-sage-darkest hover:text-sage transition-colors">Local</a>
+            <a href="#reservas" className="btn-primary">Reservar Agora</a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-yoga-teal"
+            className="md:hidden text-sage"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,47 +59,53 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg animate-fade-in">
-          <div className="container mx-auto px-4 py-4">
+        <motion.div 
+          className="md:hidden bg-white shadow-lg"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="container-custom py-4">
             <nav className="flex flex-col space-y-4">
               <a 
                 href="#sobre" 
-                className="text-yoga-gray hover:text-yoga-teal transition-colors py-2"
+                className="text-sage-darkest hover:text-sage transition-colors py-2 border-b border-sand"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Sobre
               </a>
               <a 
                 href="#experiencia" 
-                className="text-yoga-gray hover:text-yoga-teal transition-colors py-2"
+                className="text-sage-darkest hover:text-sage transition-colors py-2 border-b border-sand"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Experiência
               </a>
               <a 
                 href="#facilitadoras" 
-                className="text-yoga-gray hover:text-yoga-teal transition-colors py-2"
+                className="text-sage-darkest hover:text-sage transition-colors py-2 border-b border-sand"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Facilitadoras
               </a>
               <a 
                 href="#local" 
-                className="text-yoga-gray hover:text-yoga-teal transition-colors py-2"
+                className="text-sage-darkest hover:text-sage transition-colors py-2 border-b border-sand"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Local
               </a>
               <a 
                 href="#reservas" 
-                className="yoga-button w-full text-center"
+                className="btn-primary w-full text-center mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reservar Agora
               </a>
             </nav>
           </div>
-        </div>
+        </motion.div>
       )}
     </header>
   );

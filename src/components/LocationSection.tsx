@@ -5,19 +5,35 @@ import { MapPin, CheckCircle } from 'lucide-react';
 const LocationSection = () => {
   const images = [
     {
-      src: "https://drive.google.com/file/d/1GNYVekNIWh3PvObag6n5je6a9bxCa-Tt/view?usp=drive_link",
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/elementor/thumbs/23794891_824335124440248_8199652569603235745_n-p4gajox2x8b2l0x83h9b1njjrzulxyb5giawigx4xi.jpg",
       alt: "Prática ao ar livre"
     },
     {
-      src: "https://drive.google.com/file/d/1T3-G0ph3Siqqwa1EI8BxVgSNBFgY1Hht/view?usp=drive_link",
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/refeitorio-8.jpg",
       alt: "Atividade em grupo"
     },
     {
-      src: "https://drive.google.com/file/d/143Ppktc6msJqSbJuMkEHsrN-DW-eHOST/view?usp=drive_link",
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/24131271_827108374162923_3880128034000773436_n.jpg",
       alt: "Momento de conexão"
     },
     {
-      src: "https://drive.google.com/file/d/11Wh01b7-v8_8ApUylb2dIQ6W1WYSJV6u/view?usp=drive_link",
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/44767728_1035196850020740_6966957040291807232_n.jpg",
+      alt: "Espaço de meditação"
+    },
+    {
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/48356761_1068230940050664_8914964187814297600_n.jpg",
+      alt: "Espaço de meditação"
+    },
+    {
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/29258587_882168148656945_2380953070868627456_o.jpg",
+      alt: "Espaço de meditação"
+    },
+    {
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/30440647_893538594186567_6479308467843629056_o.jpg",
+      alt: "Espaço de meditação"
+    },
+    {
+      src: "https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/33553682_917053035168456_7201811414019735552_o.jpg",
       alt: "Espaço de meditação"
     }
   ];

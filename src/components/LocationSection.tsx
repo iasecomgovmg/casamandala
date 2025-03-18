@@ -5,19 +5,19 @@ import { MapPin, CheckCircle } from 'lucide-react';
 const LocationSection = () => {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      src: "https://drive.google.com/file/d/1GNYVekNIWh3PvObag6n5je6a9bxCa-Tt/view?usp=drive_link",
       alt: "Prática ao ar livre"
     },
     {
-      src: "https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+      src: "https://drive.google.com/file/d/1T3-G0ph3Siqqwa1EI8BxVgSNBFgY1Hht/view?usp=drive_link",
       alt: "Atividade em grupo"
     },
     {
-      src: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      src: "https://drive.google.com/file/d/143Ppktc6msJqSbJuMkEHsrN-DW-eHOST/view?usp=drive_link",
       alt: "Momento de conexão"
     },
     {
-      src: "https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      src: "https://drive.google.com/file/d/11Wh01b7-v8_8ApUylb2dIQ6W1WYSJV6u/view?usp=drive_link",
       alt: "Espaço de meditação"
     }
   ];
@@ -56,7 +56,7 @@ const LocationSection = () => {
             transition={{ duration: 0.6 }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+              src="https://drive.google.com/file/d/1_4ZWNzTKIA__6dfQ6I3RlPswdYa5q3BB/view?usp=drive_link" 
               alt="Chácara Caminho de Emaús"
               className="w-full h-full object-cover"
             />

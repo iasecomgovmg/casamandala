@@ -5,7 +5,7 @@ import { Users } from 'lucide-react';
 const FacilitatorsSection = () => {
   const facilitator = {
     name: "Wilma Ferreira",
-    image: "https://drive.google.com/file/d/1_4ZWNzTKIA__6dfQ6I3RlPswdYa5q3BB/view?usp=sharing",
+    image: "/lovable-uploads/70e568fc-3bcf-4e12-af7f-f7cc9136bc80.png",
     bio: "Graduação em Psicologia pela Universidade Paulista- Goiás; Psicóloga Transpessoal de base corporal-Instituto Serra da Portaria; Psicoterapia em DMP( regressão de memória) (Roger J. Woolger); Biomagnetista( escola superior de Biomagnetismo médico Isaac Goiz Durán; Psicóloga especialista do trânsito- faculdade Alfa; TRE exercícios para liberação do trauma( David Berceli); Terapeuta em Reiki; Terapeuta em Thetaheling; Terapeuta em Massoterapia; Em formação; Neuropsicóloga; IPOG- Goiânia; Em Formação: EMDR (Terapia de Dessensibilização e Reprocessamento por Meio dos Movimentos Oculares, Táteis ou Auditivos)."
   };
 

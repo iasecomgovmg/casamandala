@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
@@ -34,8 +34,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <Leaf className="h-6 w-6 text-sage" />
-            <span className="font-serif text-sage-dark text-2xl">Retorno ao Centro</span>
+            <img 
+              src="/lovable-uploads/8426d9ae-4074-473c-a73f-09f7284a7320.png" 
+              alt="Casa Mandala Logo" 
+              className="h-12 w-auto"
+            />
+            <span className="font-serif text-sage-dark text-2xl">Casa Mandala</span>
           </a>
 
           {/* Desktop Navigation */}

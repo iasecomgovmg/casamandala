@@ -14,18 +14,6 @@ const Footer = () => {
             <p className="text-white/70 mb-6">
               Uma jornada transformadora para reconexão com sua essência e fortalecimento emocional.
             </p>
-            
-            <div className="flex space-x-4">
-              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="bg-sage-dark/30 p-2 rounded-full text-white hover:bg-sage-dark transition-colors">
-                <Mail size={18} />
-              </a>
-            </div>
           </div>
           
           <div>

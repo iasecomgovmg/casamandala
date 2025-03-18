@@ -56,7 +56,7 @@ const LocationSection = () => {
             transition={{ duration: 0.6 }}
           >
             <img 
-              src="https://drive.google.com/file/d/1_4ZWNzTKIA__6dfQ6I3RlPswdYa5q3BB/view?usp=drive_link" 
+              src="https://dominicanasemaus.com.br/site/wp-content/uploads/2021/03/PISCINA-2.jpg" 
               alt="Chácara Caminho de Emaús"
               className="w-full h-full object-cover"
             />

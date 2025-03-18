@@ -8,8 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Leaf className="h-5 w-5 text-sage-light" />
-              <h3 className="font-serif text-2xl text-white">Retorno ao Centro</h3>
+              <h3 className="font-serif text-2xl text-white">Casa Mandala</h3>
             </div>
             
             <p className="text-white/70 mb-6">

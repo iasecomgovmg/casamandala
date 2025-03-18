@@ -31,7 +31,7 @@ const AboutSection = () => {
           </h2>
           
           <p className="text-lg text-sage-darkest/80">
-            Este retiro de 3 dias é uma imersão transformadora dentro da abordagem da 
+            Este retiro de 2 dias é uma imersão transformadora dentro da abordagem da 
             psicologia transpessoal centrada no corpo. Um espaço seguro, em meio à natureza, 
             onde você aprenderá ferramentas práticas para fortalecer suas emoções e viver 
             relações mais saudáveis e alinhadas.

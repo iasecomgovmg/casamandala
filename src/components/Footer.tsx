@@ -56,20 +56,21 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="text-sage-light flex-shrink-0 mt-1" size={18} />
                 <span className="text-white/70">
-                  Centro de Yoga Montanha Encantada<br />
-                  Garopaba, SC
+                Chácara Caminho de Emaús <br />
+                Goiânia, GO
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-sage-light" size={18} />
-                <a href="tel:+5500000000000" className="text-white/70 hover:text-white transition-colors">
-                  (00) 00000-0000
+                <a href="tel:+5562981394170" className="text-white/70 hover:text-white transition-colors">
+                  (62) 98139-4170 
+
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-sage-light" size={18} />
-                <a href="mailto:contato@montanhaencantada.com.br" className="text-white/70 hover:text-white transition-colors">
-                  contato@montanhaencantada.com.br
+                <a href="mailto:kathleenfms@icloud.com" className="text-white/70 hover:text-white transition-colors">
+                kathleenfms@icloud.com
                 </a>
               </li>
             </ul>
@@ -78,7 +79,7 @@ const Footer = () => {
         
         <div className="border-t border-sage-dark/30 pt-8 text-center">
           <p className="text-white/50 text-sm">
-            &copy; {new Date().getFullYear()} Centro de Yoga Montanha Encantada. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Casa Mandala. Todos os direitos reservados.
           </p>
         </div>
       </div>

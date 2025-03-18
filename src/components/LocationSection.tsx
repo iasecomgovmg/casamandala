@@ -39,11 +39,11 @@ const LocationSection = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-serif text-sage-darkest mb-6">
-            Centro de Yoga Montanha Encantada
+            Chácara Caminho de Emaús
           </h2>
           
           <p className="text-lg text-sage-darkest/80">
-            Situado em Garopaba, SC, um refúgio natural perfeito para sua jornada de autoconhecimento.
+            Situada em Goiânia, GO, um refúgio natural perfeito para sua jornada de autoconhecimento.
           </p>
         </motion.div>
 
@@ -57,7 +57,7 @@ const LocationSection = () => {
           >
             <img 
               src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
-              alt="Centro de Yoga Montanha Encantada"
+              alt="Chácara Caminho de Emaús"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -74,7 +74,7 @@ const LocationSection = () => {
             </h3>
             
             <p className="text-sage-darkest/80 mb-6">
-              O Centro de Yoga Montanha Encantada é um espaço especialmente concebido para permitir a reconexão com sua essência. Rodeado pela natureza exuberante de Garopaba, o local oferece a tranquilidade necessária para sua jornada de transformação interior.
+              A Chácara Caminho de Emaús é um espaço especialmente concebido para permitir a reconexão com sua essência. Rodeado pela natureza exuberante de Goiânia, o local oferece a tranquilidade necessária para sua jornada de transformação interior.
             </p>
             
             <div className="space-y-4">

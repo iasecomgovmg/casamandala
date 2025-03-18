@@ -10,6 +10,7 @@ import FacilitatorsSection from '@/components/FacilitatorsSection';
 import LocationSection from '@/components/LocationSection';
 import PricingSection from '@/components/PricingSection';
 import QuoteSection from '@/components/QuoteSection';
+import ScheduleSection from '@/components/ScheduleSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -38,6 +39,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <ExperienceSection />
+      <ScheduleSection />
       <FacilitatorsSection />
       <QuoteSection />
       <LocationSection />

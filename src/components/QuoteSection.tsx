@@ -33,12 +33,12 @@ const QuoteSection = () => {
             </motion.div>
             
             <h2 className="text-2xl md:text-3xl font-serif text-sage-darkest mb-8">
-              "Reconecte-se com sua essência e fortaleça suas emoções"
+              "Reconecte-se com sua essência e libere sua Criança Ferida"
             </h2>
             
             <div className="max-w-2xl mx-auto">
               <p className="text-sage-darkest/80 mb-6">
-                Um final de semana transformador dentro da abordagem psicologia transpessoal centrada no corpo; 
+                Uma vivência transformadora dentro da abordagem psicologia transpessoal centrada no corpo; 
                 o cerne do nosso ser é o centro do universo, onde encontramos nosso verdadeiro Self.
               </p>
               

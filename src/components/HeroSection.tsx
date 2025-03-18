@@ -20,7 +20,7 @@ const HeroSection = () => {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-tight mb-6">
-              Retorno ao <span className="text-sage font-normal">Centro</span>
+              Casa <span className="text-sage font-normal">Mandala</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-sage-darkest/80 mb-6 font-light">
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </p>
             
             <p className="text-sage-darkest/70 mb-8 max-w-lg mx-auto lg:mx-0">
-              Um retiro transformador no Centro de Yoga Montanha Encantada, 
+              Uma vivência transformadora na Chácara Caminho de Emaús, 
               onde você poderá desacelerar, olhar para dentro e reencontrar sua essência.
             </p>
             
@@ -45,12 +45,12 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-12">
               <div className="flex items-center">
                 <Calendar className="text-sage mr-2 h-5 w-5" />
-                <span className="text-sage-darkest/80">20 a 23 de fevereiro de 2025</span>
+                <span className="text-sage-darkest/80">31 de maio a 01 de junho</span>
               </div>
               
               <div className="flex items-center">
                 <MapPin className="text-sage mr-2 h-5 w-5" />
-                <span className="text-sage-darkest/80">Garopaba, SC</span>
+                <span className="text-sage-darkest/80">Goiânia, GO</span>
               </div>
             </div>
           </motion.div>
@@ -83,7 +83,7 @@ const HeroSection = () => {
                 className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 bg-white p-4 rounded-xl shadow-lg max-w-[200px]"
               >
                 <p className="text-sm text-sage-darkest/70">
-                  "Um final de semana transformador dentro da abordagem da psicologia transpessoal"
+                  "Uma vivência transformadora dentro da abordagem da psicologia transpessoal"
                 </p>
               </motion.div>
             </div>

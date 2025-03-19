@@ -4,10 +4,11 @@ import { Activity, CheckCircle } from 'lucide-react';
 
 const ExperienceSection = () => {
   const experiences = [
-    "Exercícios de bioenergética e TRE para liberação de traumas e bloqueios",
-    "Dinâmicas sistêmicas para tomar o seu lugar na vida, conectando com o seu propósito",
-    "Meditações guiadas, práticas de respiração e dinâmicas emocionais",
-    "Workshops sobre autocuidado, relações saudáveis e alinhamento com sua essência",
+    "Visualização e a poderosa Imaginação Ativa de Carl Jung",
+    "Liberação dos Sete Anéis Corporais de Reich",
+    "Trabalhos com autoimagem de Léo Matos",
+    "Flexibilização e Aterramento na abordagem de Reich",
+    "Mandalas para integrar a Psique e as Emoções",
     "Alimentação consciente e momentos de conexão profunda com a natureza",
     "Ritual de encerramento para integrar os aprendizados à sua vida diária"
   ];
@@ -39,11 +40,11 @@ const ExperienceSection = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-serif text-sage-darkest mb-6">
-            O que você vai vivenciar?
+            O que você irá vivenciar?
           </h2>
           
           <p className="text-lg text-sage-darkest/80">
-            Um programa completo para sua transformação interior e conexão com sua essência.
+            Um programa completo para sua transformação interior.
           </p>
         </motion.div>
         

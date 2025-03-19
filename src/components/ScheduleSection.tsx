@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Clock, Calendar } from 'lucide-react';
 
@@ -54,35 +53,35 @@ const ScheduleSection = () => {
                 <h4 className="text-xl font-medium text-sage mb-4">Manhã:</h4>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">9h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">9h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Chegada e Acolhimento</p>
                       <p className="text-sage-darkest/70">Ritual de abertura, música suave e círculo de boas-vindas.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">9h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">9h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Apresentação e Intenção</p>
                       <p className="text-sage-darkest/70">Compartilhamento breve das expectativas e intenções.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">10h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">10h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Exercício Corporal Reichiano</p>
                       <p className="text-sage-darkest/70">Respiração profunda e desbloqueio do segmento ocular (olhos e testa) para liberar tensões iniciais.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">10h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">10h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Meditação Guiada</p>
                       <p className="text-sage-darkest/70">Reconexão com a criança interior, visualizando um lugar seguro.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">11h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">11h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Intervalo</p>
                       <p className="text-sage-darkest/70">Chá, frutas e silêncio contemplativo.</p>
@@ -96,42 +95,42 @@ const ScheduleSection = () => {
                 <h4 className="text-xl font-medium text-sage mb-4">Tarde:</h4>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">13h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">13h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">TRE (Exercícios de Liberação de Trauma)</p>
                       <p className="text-sage-darkest/70">Série de exercícios suaves para ativar tremores neurogênicos, liberando tensões profundas do corpo.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">13h45</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">13h45</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Trabalho com Sintomas (Léo Matos)</p>
                       <p className="text-sage-darkest/70">Identificação de sintomas corporais e diálogo com essas sensações, permitindo que o corpo expresse o que precisa ser ouvido.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">14h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">14h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Visualização Ativa (Jung)</p>
                       <p className="text-sage-darkest/70">Encontro com a criança interior, acolhendo suas dores e necessidades.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">15h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">15h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Criação de Mandalas</p>
                       <p className="text-sage-darkest/70">Expressão simbólica do encontro com a criança ferida.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">15h45</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">15h45</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Partilha</p>
                       <p className="text-sage-darkest/70">Momento de escuta no círculo, integrando as experiências.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">16h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">16h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Ritual de Acolhimento</p>
                       <p className="text-sage-darkest/70">Abraço simbólico à própria criança interior, com música suave.</p>
@@ -145,14 +144,14 @@ const ScheduleSection = () => {
                 <h4 className="text-xl font-medium text-sage mb-4">Noite:</h4>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">19h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">19h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Meditação Noturna</p>
                       <p className="text-sage-darkest/70">Relaxamento profundo e integração do dia.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">20h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">20h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Silêncio Sagrado</p>
                       <p className="text-sage-darkest/70">Noite de recolhimento, permitindo que as experiências ressoem internamente.</p>
@@ -183,42 +182,42 @@ const ScheduleSection = () => {
                 <h4 className="text-xl font-medium text-sage mb-4">Manhã:</h4>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">7h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">7h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Caminhada Meditativa</p>
                       <p className="text-sage-darkest/70">Conexão com a natureza, em silêncio.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">8h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">8h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Exercício Corporal</p>
                       <p className="text-sage-darkest/70">Foco no segmento torácico e abdominal, liberando emoções contidas.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">8h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">8h30</div>
                     <div>
-                      <p className="font-medium text-sage-darkest">TRE</p>
-                      <p className="text-sage-darkest/70">Nova prática para aprofundar a liberação de tensões e traumas.</p>
+                      <p className="font-medium text-sage-darkest">Trabalho Corporal</p>
+                      <p className="text-sage-darkest/70">Bioenergética.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">9h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">9h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Trabalho com Sintomas</p>
                       <p className="text-sage-darkest/70">Exploração dos sinais do corpo, acolhendo mensagens emocionais guardadas.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">9h30</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">9h30</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Visualização Ativa</p>
                       <p className="text-sage-darkest/70">Reencontro com a criança curada, projetando um novo futuro.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">10h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">10h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Mandala Final</p>
                       <p className="text-sage-darkest/70">Representação simbólica do renascimento e integração.</p>
@@ -232,28 +231,28 @@ const ScheduleSection = () => {
                 <h4 className="text-xl font-medium text-sage mb-4">Tarde:</h4>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">13h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">13h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Ritual de Liberação</p>
                       <p className="text-sage-darkest/70">Escrita de cartas de perdão e soltura, queimando-as em um ritual simbólico.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">14h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">14h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Banho de Renovação</p>
                       <p className="text-sage-darkest/70">Banho consciente, permitindo a sensação de purificação e leveza.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">15h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">15h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Círculo de Encerramento</p>
                       <p className="text-sage-darkest/70">Compartilhamento das vivências, gratidão e fechamento do ciclo.</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium">16h</div>
+                    <div className="mr-3 flex-shrink-0 text-sage-dark font-medium w-14">16h</div>
                     <div>
                       <p className="font-medium text-sage-darkest">Partida</p>
                       <p className="text-sage-darkest/70">Despedida e integração do aprendizado.</p>

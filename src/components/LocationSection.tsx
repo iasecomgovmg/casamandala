@@ -1,7 +1,8 @@
-
 import { motion } from 'framer-motion';
 import { MapPin, CheckCircle, Building, Map } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import AccommodationMap from './AccommodationMap';
+import GoogleMapsDirections from './GoogleMapsDirections';
 
 const LocationSection = () => {
   const images = [
@@ -139,11 +140,7 @@ const LocationSection = () => {
             </CardHeader>
             <CardContent>
               <div className="overflow-hidden rounded-lg mb-4">
-                <img 
-                  src="/lovable-uploads/b9123316-b09d-48c5-9981-d241ec59a1e4.png" 
-                  alt="Mapa das acomodações"
-                  className="w-full"
-                />
+                <AccommodationMap />
               </div>
               <div className="space-y-2 text-sm text-sage-darkest/80">
                 <div className="bg-sage-lightest p-3 rounded-lg">
@@ -177,14 +174,8 @@ const LocationSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="overflow-hidden rounded-lg mb-4">
-                <img 
-                  src="/lovable-uploads/1268de81-2357-4db5-823d-23fd33f44192.png" 
-                  alt="Mapa de localização" 
-                  className="w-full"
-                />
-              </div>
-              <div className="space-y-3 text-sm text-sage-darkest/80">
+              <GoogleMapsDirections />
+              <div className="space-y-3 text-sm text-sage-darkest/80 mt-4">
                 <div className="bg-sage-lightest p-3 rounded-lg">
                   <h4 className="font-medium mb-2 text-sage-dark">Endereço:</h4>
                   <p>Caminho de Emaus, Rua RI 38, sem número</p>

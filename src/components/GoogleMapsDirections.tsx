@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -14,14 +13,15 @@ const GoogleMapsDirections = () => {
   const destination = "Caminho de Emaus, Rua RI 38, Residencial Itaipu, Goiânia, GO";
   const encodedDestination = encodeURIComponent(destination);
   
+  // Google Maps API Key
+  const GOOGLE_MAPS_API_KEY = "AIzaSyAcAoIMIBx2tSKS-y_oRdQtgPTkjE3Ocgs";
+  
   const updateDirections = () => {
     if (!origin) return;
     
     const encodedOrigin = encodeURIComponent(origin);
-    const directionsUrl = `https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=${encodedOrigin}&destination=${encodedDestination}&mode=driving`;
+    const directionsUrl = `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=${encodedOrigin}&destination=${encodedDestination}&mode=driving`;
     
-    // For development, we'll use a static map since we don't have an API key
-    // In production, replace YOUR_API_KEY with an actual Google Maps API key
     if (mapIframeRef.current) {
       mapIframeRef.current.src = directionsUrl;
     }
@@ -30,7 +30,7 @@ const GoogleMapsDirections = () => {
   // Initial map setup
   useEffect(() => {
     // Default map URL (location view)
-    const defaultMapUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedDestination}&zoom=14`;
+    const defaultMapUrl = `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${encodedDestination}&zoom=14`;
     
     if (mapIframeRef.current) {
       mapIframeRef.current.src = defaultMapUrl;
@@ -72,7 +72,7 @@ const GoogleMapsDirections = () => {
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedDestination}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${encodedDestination}`}
           ></iframe>
           
           <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm p-3 text-xs text-sage-darkest">

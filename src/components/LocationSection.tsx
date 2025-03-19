@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion';
-import { MapPin, CheckCircle } from 'lucide-react';
+import { MapPin, CheckCircle, Building, Map } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const LocationSection = () => {
   const images = [
@@ -116,6 +117,109 @@ const LocationSection = () => {
             </div>
           </motion.div>
         </div>
+
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
+            <CardHeader className="pb-2">
+              <div className="flex justify-center mb-4">
+                <div className="bg-sage/10 p-3 rounded-full">
+                  <Building className="h-5 w-5 text-sage" />
+                </div>
+              </div>
+              <CardTitle className="text-center text-xl text-sage-darkest font-serif">Acomodações</CardTitle>
+              <CardDescription className="text-center text-sage-darkest/70">
+                Disposição dos quartos e banheiros
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-hidden rounded-lg mb-4">
+                <img 
+                  src="/lovable-uploads/b9123316-b09d-48c5-9981-d241ec59a1e4.png" 
+                  alt="Mapa das acomodações"
+                  className="w-full"
+                />
+              </div>
+              <div className="space-y-2 text-sm text-sage-darkest/80">
+                <div className="bg-sage-lightest p-3 rounded-lg">
+                  <h4 className="font-medium mb-2 text-sage-dark">Legenda:</h4>
+                  <ul className="space-y-1 list-disc pl-5">
+                    <li>1c = Uma cama</li>
+                    <li>2c = Duas camas</li>
+                    <li>1b = Um banheiro</li>
+                  </ul>
+                  <p className="mt-2 text-sage-darkest/90 italic">
+                    Obs.: Os 6 quartos duplos (A e B): 1, 2, 3, 4, 17 e 18; possuem somente um banheiro como mostra o croqui.
+                  </p>
+                </div>
+                <p>
+                  A chácara dispõe de diversos espaços comuns como jardim, biblioteca e refeitório, proporcionando ambientes acolhedores para integração e descanso.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
+            <CardHeader className="pb-2">
+              <div className="flex justify-center mb-4">
+                <div className="bg-sage/10 p-3 rounded-full">
+                  <Map className="h-5 w-5 text-sage" />
+                </div>
+              </div>
+              <CardTitle className="text-center text-xl text-sage-darkest font-serif">Como Chegar</CardTitle>
+              <CardDescription className="text-center text-sage-darkest/70">
+                Localização e rotas de acesso
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-hidden rounded-lg mb-4">
+                <img 
+                  src="/lovable-uploads/1268de81-2357-4db5-823d-23fd33f44192.png" 
+                  alt="Mapa de localização" 
+                  className="w-full"
+                />
+              </div>
+              <div className="space-y-3 text-sm text-sage-darkest/80">
+                <div className="bg-sage-lightest p-3 rounded-lg">
+                  <h4 className="font-medium mb-2 text-sage-dark">Endereço:</h4>
+                  <p>Caminho de Emaus, Rua RI 38, sem número</p>
+                  <p>Residencial Itaipu - Goiânia - Goiás</p>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2 text-sage-dark">Principais rotas:</h4>
+                  <ol className="space-y-1 list-decimal pl-5">
+                    <li>Setor Garavelo, GO-040, sentido à cidade de Aragoiânia.</li>
+                    <li>Supermercado Bretas, seguir por 1 km.</li>
+                    <li>Posto de Combustíveis, virar à direita, Av. Vieira Santos, seguir por 3 km.</li>
+                    <li>Residencial Itaipu.</li>
+                    <li>Fim do asfalto, virar à direita, Rua RI-38, seguir por 400 m.</li>
+                    <li>Fim do asfalto, virar à esquerda, Av. Dourados, seguir por 500 m, rua sem pavimentação.</li>
+                    <li>Caminho de Emaus, à direita.</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2 text-sage-dark">Acessos ao Setor Garavelo:</h4>
+                  <ul className="space-y-1 list-disc pl-5">
+                    <li>Av. Rio Verde, passando pelo Buriti Shopping e Cidade Empresarial.</li>
+                    <li>Av. Juscelino Kubitschek, passando pelo Terminal das Bandeiras e Setor Novo Horizonte.</li>
+                    <li>Anel Viário, acesso pela BR-153, Aparecida de Goiânia, próximo a Bolachas Mabel ou BR-060, saída para Rio Verde.</li>
+                  </ul>
+                </div>
+                <div className="bg-sage-lightest p-3 rounded-lg">
+                  <h4 className="font-medium mb-2 text-sage-dark">Contatos para reservas:</h4>
+                  <p>(62) 3288-7354</p>
+                  <p>www.dominicanasemaus.com.br</p>
+                  <p>contatos@dominicanasemaus.com.br</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
 
         <motion.div 
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"

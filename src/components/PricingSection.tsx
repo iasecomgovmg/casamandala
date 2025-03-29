@@ -71,7 +71,7 @@ const PricingSection = () => {
                 </h4>
                 
                 <p className="text-2xl font-bold text-sage mb-6">
-                  R$ 1.800,00
+                  10x de R$180
                 </p>
                 
                 <p className="text-sage-darkest/70 mb-6">

@@ -75,7 +75,7 @@ const PricingSection = () => {
                 </p>
                 
                 <p className="text-sage-darkest/70 mb-6">
-                  Parcelamento em até 6x no cartão
+                  Parcelamento em até 10x no cartão
                 </p>
                 
                 <a 
